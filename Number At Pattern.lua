@@ -90,14 +90,14 @@ function buildUI()
     local startLabel=builder:create('label','{"text":"Start # at:", "align" : "center"}'):addToFlexbox(thirdRow)
     startLabel.width=100
 
-    local startEdit=builder:create('edit', '{"id" : "number", "text":"0"}'):addToFlexbox(thirdRow)
+    local startEdit=builder:create('edit', '{"id" : "number", "text":"1"}'):addToFlexbox(thirdRow)
     startEdit.width=80
     startEdit.marginright=20
 
     local separateLabel=builder:create('label','{"text":"Separate with:", "align" : "center"}'):addToFlexbox(thirdRow)
     separateLabel.width=100
 
-    local separateEdit=builder:create('edit', '{"id" : "sepChar", "text":""}'):addToFlexbox(thirdRow)
+    local separateEdit=builder:create('edit', '{"id" : "sepChar", "text":" "}'):addToFlexbox(thirdRow)
     separateEdit.width=80
 
     local formatLabel=builder:create('label','{"text":"Format:", "align" : "center"}'):addToFlexbox(fourthRow)
