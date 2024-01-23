@@ -1,0 +1,33 @@
+[
+  {
+    "actions": {
+      "find": "^([^,]*,[^,]*,[^,]*,).*",
+      "field": "Description",
+      "replace": "$1",
+      "regex": true,
+      "destfield": "FXName"
+    },
+    "script_name": "Find and Place",
+    "bypassed": "0"
+  },
+  {
+    "actions": {
+      "find": ",",
+      "field": "FXName",
+      "replace": "",
+      "regex": false
+    },
+    "script_name": "Find and Replace",
+    "bypassed": "0"
+  },
+  {
+    "actions": {
+      "find": " - ",
+      "field": "FXName",
+      "replace": " ",
+      "regex": false
+    },
+    "script_name": "Find and Replace",
+    "bypassed": "0"
+  }
+]
