@@ -1,0 +1,20 @@
+[
+  {
+    "actions": {
+      "usernote": "Splits camelCase, TitleCase while preserving UPPERCASE (myTVChannel -> My TV Channel)"
+    },
+    "script_name": "Comment",
+    "bypassed": "0"
+  },
+  {
+    "actions": {
+      "find": "(?<!(^|[A-Z]))(?=[A-Z])|(?<!^)(?=[A-Z][a-z])",
+      "field": "Description",
+      "replace": " ",
+      "regex": true,
+      "casesensitive": true
+    },
+    "script_name": "Find and Replace",
+    "bypassed": "0"
+  }
+]
